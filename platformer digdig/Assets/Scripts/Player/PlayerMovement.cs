@@ -40,17 +40,13 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
+    }
 
-        if (moveInput != Vector2.zero)
-        {
-            Quaternion targetRotation = Quaternion.LookRotation(transform.forward, moveInput);
-            Quaternion rotate = Quaternion.RotateTowards(transform.rotation, targetRotation, rotateSpeed * Time.deltaTime);
+    [SerializeField] GameObject swordObject;
+    [SerializeField] GameObject playerObject;
+    void OnFire()
+    {
 
-            rb.MoveRotation(rotate);
-        }
-        else
-        {
-            rb.angularVelocity = 0;
-        }
+        GameObject sword = Instantiate(swordObject, playerObject.transform.position, transform.rotation);
     }
 }

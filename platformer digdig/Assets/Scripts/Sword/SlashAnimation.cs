@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class SlashAnimation : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    int x = 1;
 
     // Update is called once per frame
     void Update()
     {
-        
+        x++;
+        if (x==15)
+        {
+            Destroy(gameObject);
+        }
+        transform.Rotate(0,0,x);
     }
 }

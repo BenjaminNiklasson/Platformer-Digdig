@@ -23,6 +23,13 @@ public class EnemyMovementPlatform : MonoBehaviour
         eSpeed = -eSpeed;
         FlipSprite();
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Weapon"))
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void FlipSprite()
     {

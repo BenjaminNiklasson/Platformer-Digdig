@@ -18,10 +18,17 @@ public class EnemyMovementWall : MonoBehaviour
         rb.velocity = new Vector2(eWallSpeed, 0);
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        eWallSpeed = -eWallSpeed;
-        FlipSpriteWall();
+        if (other.gameObject.CompareTag("Weapon"))
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            eWallSpeed = -eWallSpeed;
+            FlipSpriteWall();
+        }
     }
 
     void FlipSpriteWall()

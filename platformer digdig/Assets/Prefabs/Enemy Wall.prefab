@@ -11,13 +11,12 @@ GameObject:
   - component: {fileID: 4469489250760645210}
   - component: {fileID: 7099461049723510996}
   - component: {fileID: 2327597159504378101}
-  - component: {fileID: -670060148147104737}
   - component: {fileID: -3377944758945547220}
   - component: {fileID: 3131353518968526717}
   - component: {fileID: 3511556103652014777}
   m_Layer: 0
   m_Name: Enemy Wall
-  m_TagString: Untagged
+  m_TagString: Hazard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,18 +115,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-670060148147104737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8332742768690621123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 407cfaf317fac914ebfe6d74b6ba30df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &-3377944758945547220
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -208,7 +195,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.4596038, y: 0.33757687}
+  m_Offset: {x: 0.010427237, y: 0.05288744}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.28866667}
@@ -219,7 +206,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07276821, y: 0.4252205}
+  m_Size: {x: 0.9711213, y: 0.99459934}
   m_EdgeRadius: 0
 --- !u!114 &3511556103652014777
 MonoBehaviour:

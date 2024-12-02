@@ -619,6 +619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 8332742768690621123, guid: 1cf1c527ae4e2dc4ba656a60611cf264, type: 3}
+      propertyPath: m_TagString
+      value: Hazard
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -648,10 +652,11 @@ GameObject:
   - component: {fileID: 1026650562}
   - component: {fileID: 1026650564}
   - component: {fileID: 1026650563}
+  - component: {fileID: 1026650567}
   - component: {fileID: 1026650566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player Object
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -866,8 +871,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f726c9b28a6914bb7649fd97135583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swordObject: {fileID: 3701512404220007375, guid: a5a3e171a24b3f64da92cf9ee335c748, type: 3}
+  swordObject: {fileID: 2197212380349089328, guid: 8f6c2450572472b4da06e5f0a1612296, type: 3}
   playerObject: {fileID: 1026650559}
+--- !u!114 &1026650567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026650559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52df6d83f9589e4b8d769683e8adff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 5
+  invincibilityTime: 2
 --- !u!1001 &1029550020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -923,6 +942,10 @@ PrefabInstance:
     - target: {fileID: 8332742768690621123, guid: 1b86a04fdb6795c48836f7c015dc65bf, type: 3}
       propertyPath: m_Name
       value: Enemy Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332742768690621123, guid: 1b86a04fdb6795c48836f7c015dc65bf, type: 3}
+      propertyPath: m_TagString
+      value: Hazard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

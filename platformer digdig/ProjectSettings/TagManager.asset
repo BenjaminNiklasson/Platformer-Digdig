@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Weapon
+  - Player1
+  - Hazard
   layers:
   - Default
   - TransparentFX
@@ -14,8 +16,8 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
+  - Weapon
+  - Player
   - 
   - 
   - 
