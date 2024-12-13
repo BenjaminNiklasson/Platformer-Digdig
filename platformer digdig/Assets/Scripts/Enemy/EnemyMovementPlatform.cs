@@ -20,8 +20,15 @@ public class EnemyMovementPlatform : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        eSpeed = -eSpeed;
-        FlipSprite();
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            eSpeed = -eSpeed;
+            FlipSprite();
+        }
+        else
+        {
+
+        }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

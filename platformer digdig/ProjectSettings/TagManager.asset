@@ -8,6 +8,8 @@ TagManager:
   - Weapon
   - Player1
   - Hazard
+  - Spike
+  - Upgrade
   layers:
   - Default
   - TransparentFX

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerDamage : MonoBehaviour
 {
@@ -29,7 +30,15 @@ public class PlayerDamage : MonoBehaviour
             else
             {
                 Destroy(gameObject);
+                int currentScene = SceneManager.GetActiveScene().buildIndex;
+                SceneManager.LoadScene(currentScene);
             }
+        }
+        else if (other.gameObject.CompareTag("Spike"))
+        {
+            Destroy(gameObject);
+            int currentScene = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentScene);
         }
     }
 }

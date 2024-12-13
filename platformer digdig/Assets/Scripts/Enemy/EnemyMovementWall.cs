@@ -24,10 +24,14 @@ public class EnemyMovementWall : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        else
+        else if (other.gameObject.CompareTag("Ground"))
         {
             eWallSpeed = -eWallSpeed;
             FlipSpriteWall();
+        }
+        else
+        {
+
         }
     }
 
